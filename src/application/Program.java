@@ -14,7 +14,7 @@ public class Program {
 		Rent[] vect = new Rent[10];
 		
 		System.out.print("How many rooms will be rented? ");
-		int n = sc.nextInt();
+		Integer n = sc.nextInt();
 		
 		for(int i = 1; i <= n; i++ ) {
 			System.out.println();
@@ -25,7 +25,7 @@ public class Program {
 			System.out.print("Email: ");
 			String email = sc.nextLine();
 			System.out.print("Room: ");
-			int room = sc.nextInt();
+			Integer room = sc.nextInt();
 			vect[room] = new Rent(room, name, email);
 		}
 		
@@ -34,8 +34,8 @@ public class Program {
 		for(int i = 0; i < vect.length; i++) {
 			if (vect[i] != null) {
 				Rent alug = new Rent(vect[i].getRoom(),
-									 vect[i].getName(),
-									 vect[i].getEmail());
+                                                     vect[i].getName(),
+                                                     vect[i].getEmail());
 				System.out.println(alug);
 			}
 		}

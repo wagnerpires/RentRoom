@@ -1,7 +1,7 @@
 package entities;
 
 public class Rent {
-	private int room;
+	private Integer room;
 	private String name;
 	private String email;
 
